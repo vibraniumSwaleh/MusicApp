@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="music">Choose your genre</string>
+    <string name="hip_hop">Hip hop</string>
+    <string name="jazz">Jazz</string>
+    <string name="blues">Blues</string>
+    <string name="reggae">Reggae</string>
+</resources>
