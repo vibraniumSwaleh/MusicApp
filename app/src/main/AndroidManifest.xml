@@ -19,7 +19,8 @@
         <activity android:name=".Hiphop" />
         <activity android:name=".Jazz" />
         <activity android:name=".Blues" />
-        <activity android:name=".Raggae"></activity>
+        <activity android:name=".Raggae" />
+        <activity android:name=".MusicPlaying"></activity>
     </application>
 
 </manifest>
