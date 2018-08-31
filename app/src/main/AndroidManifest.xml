@@ -16,11 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Hiphop" />
-        <activity android:name=".Jazz" />
-        <activity android:name=".Blues" />
-        <activity android:name=".Raggae" />
-        <activity android:name=".MusicPlaying"></activity>
+        <activity android:name=".Hiphop"
+            android:label="Hip hop"/>
+        <activity android:name=".Jazz"
+            android:label="Jazz"/>
+        <activity android:name=".Blues"
+            android:label="Blues" />
+        <activity android:name=".Raggae"
+            android:label="Raggae"/>
+        <activity android:name=".MusicPlaying"
+            android:label="Now playing"></activity>
     </application>
 
 </manifest>

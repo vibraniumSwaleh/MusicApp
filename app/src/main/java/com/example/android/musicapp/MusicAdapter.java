@@ -15,7 +15,7 @@ import com.example.android.musicapp.R;
 
 import java.util.ArrayList;
 
-public class MusicAdapter extends ArrayAdapter<MusicItems>{
+public class MusicAdapter extends ArrayAdapter<MusicItems> {
 
     private static final String LOG_TAG = MusicAdapter.class.getSimpleName();
 
@@ -34,7 +34,7 @@ public class MusicAdapter extends ArrayAdapter<MusicItems>{
 
         View listItemView = convertView;
 
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
 

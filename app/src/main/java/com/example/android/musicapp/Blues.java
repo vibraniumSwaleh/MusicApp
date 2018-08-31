@@ -1,9 +1,14 @@
 package com.example.android.musicapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.text.FieldPosition;
 import java.util.ArrayList;
 
 public class Blues extends AppCompatActivity {
@@ -14,7 +19,7 @@ public class Blues extends AppCompatActivity {
         setContentView(R.layout.music_list);
 
         //Array of Blues songs
-        ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
+        final ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
 
         //Assigning images and text to musicItem array
         musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
@@ -29,10 +34,27 @@ public class Blues extends AppCompatActivity {
         musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
 
 
-        com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
+        final com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
 
-        ListView listView = (ListView) findViewById(R.id.musicList);
+        final ListView listView = (ListView) findViewById(R.id.musicList);
 
         listView.setAdapter(itemsAdapter);
+
+        //Opening another activity when ListView item is clicked
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                MusicItems itemOne = musicItems.get(i);
+
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("Music Items", itemOne);
+
+                Intent listViewClicked = new Intent(Blues.this, MusicPlaying.class);
+                listViewClicked.putExtras(bundle);
+                startActivity(listViewClicked);
+            }
+        });
+
     }
 }

@@ -1,6 +1,8 @@
 package com.example.android.musicapp;
 
-public class MusicItems  {
+import java.io.Serializable;
+
+public class MusicItems implements Serializable {
 
     //class states/variables
     private String mSongName;
@@ -8,24 +10,26 @@ public class MusicItems  {
     private int mSongPic;
 
     //word constructor
-    public MusicItems(int songPic, String songName, String songArtist){
+    public MusicItems(int songPic, String songName, String songArtist) {
         mSongName = songName;
         mSongArtist = songArtist;
         mSongPic = songPic;
     }
 
     //return song name
-    public String getSongName(){
+    public String getSongName() {
         return mSongName;
     }
 
     //return song artist name
-    public String getSongArtist(){
+    public String getSongArtist() {
         return mSongArtist;
     }
 
     //return song artist picture
-    public int getSongPic(){ return mSongPic;}
-
+    public int getSongPic() {
+        return mSongPic;
     }
+
+}
 

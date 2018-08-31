@@ -5,4 +5,5 @@
     <string name="jazz">Jazz</string>
     <string name="blues">Blues</string>
     <string name="reggae">Reggae</string>
+    <string name="song_name">Song Name</string>
 </resources>
