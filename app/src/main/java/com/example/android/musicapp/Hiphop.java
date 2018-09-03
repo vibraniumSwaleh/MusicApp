@@ -20,16 +20,16 @@ public class Hiphop extends AppCompatActivity {
         final ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
 
         //Assigning images and text to musicItem array
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.hiphop, "minto wuksus","minto"));
+        musicItems.add(new MusicItems(R.drawable.godsplan, "God's Plan","Drake"));
+        musicItems.add(new MusicItems(R.drawable.niceforwhat, "Nice For What","Drake"));
+        musicItems.add(new MusicItems(R.drawable.apes, "APES**T","The Carters"));
+        musicItems.add(new MusicItems(R.drawable.topoff, "Top Off","DJ Khaled"));
+        musicItems.add(new MusicItems(R.drawable.luciddreams, "Lucid Dreams","Juice Wrld"));
+        musicItems.add(new MusicItems(R.drawable.bigbank, "Big Bank","YG"));
+        musicItems.add(new MusicItems(R.drawable.yesindeed, "Yes Indeed","Lib Baby"));
+        musicItems.add(new MusicItems(R.drawable.imupset, "I'm Upset","Drake"));
+        musicItems.add(new MusicItems(R.drawable.rockstar, "Rockstar","Post Malone"));
+        musicItems.add(new MusicItems(R.drawable.lookalive, "Look Alive","BlocBoy JB"));
 
 
         com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);

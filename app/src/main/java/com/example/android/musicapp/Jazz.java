@@ -20,17 +20,12 @@ public class Jazz extends AppCompatActivity {
         final ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
 
         //Assigning images and text to musicItem array
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.jazz, "minto wuksus","minto"));
-
+        musicItems.add(new MusicItems(R.drawable.alliwant, "All I Want","Jessy J"));
+        musicItems.add(new MusicItems(R.drawable.perfectduet, "Perfect Duet","Postmodern Jukebox"));
+        musicItems.add(new MusicItems(R.drawable.badatlove, "Bad At Love","Postmodern Jukebox"));
+        musicItems.add(new MusicItems(R.drawable.for2akis, "For 2 Akis","Shinya Fukumori"));
+        musicItems.add(new MusicItems(R.drawable.fistsoffury, "Fists of Fury","Kamasi Washington"));
+        musicItems.add(new MusicItems(R.drawable.thiswillbe, "This Will Be (An Everlasting Love)","Dave Koz"));
 
         com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
 

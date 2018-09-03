@@ -22,17 +22,12 @@ public class Blues extends AppCompatActivity {
         final ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
 
         //Assigning images and text to musicItem array
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
-
+        musicItems.add(new MusicItems(R.drawable.power, "Power","AJ Ghent [ j-ent ]"));
+        musicItems.add(new MusicItems(R.drawable.train, "Train","Victor Wainwright"));
+        musicItems.add(new MusicItems(R.drawable.theduffler, "The Duffler","Fantastic Negrito"));
+        musicItems.add(new MusicItems(R.drawable.deepriverblues, "Deep River Blues","Tommy Emmanuel"));
+        musicItems.add(new MusicItems(R.drawable.theicequees, "The Ice Queen","Sue Foley"));
+        musicItems.add(new MusicItems(R.drawable.thefoundone, "Found The One","Charlie Musselwhite"));
 
         com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
 

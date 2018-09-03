@@ -20,16 +20,16 @@ public class Raggae extends AppCompatActivity {
         final ArrayList<MusicItems> musicItems = new ArrayList<MusicItems>();
 
         //Assigning images and text to musicItem array
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
-        musicItems.add(new MusicItems(R.drawable.reggae, "minto wuksus","minto"));
+        musicItems.add(new MusicItems(R.drawable.theunforgiven, "The Unforgiven","Alboroise"));
+        musicItems.add(new MusicItems(R.drawable.flywithme, "Fly with Me","Iration"));
+        musicItems.add(new MusicItems(R.drawable.settledowneasy, "Settle Down Easy","Rebelution"));
+        musicItems.add(new MusicItems(R.drawable.helptheweak, "Help the Weak","Capleton"));
+        musicItems.add(new MusicItems(R.drawable.todaysanewday, "Today's a New Day","Common Kings"));
+        musicItems.add(new MusicItems(R.drawable.celebrate, "Celebrate","Rebelution"));
+        musicItems.add(new MusicItems(R.drawable.giddem, "Giddem","Burna Boy"));
+        musicItems.add(new MusicItems(R.drawable.ifyouwantit, "If You Want It","Slightly Stoopid"));
+        musicItems.add(new MusicItems(R.drawable.noguarantee, "No Guarantee","Protoje"));
+        musicItems.add(new MusicItems(R.drawable.dontmakemewait, "Don't Make Me Wait","Shaggy"));
 
 
         com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
