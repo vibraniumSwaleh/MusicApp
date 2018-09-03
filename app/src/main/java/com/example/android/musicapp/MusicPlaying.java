@@ -12,17 +12,16 @@ public class MusicPlaying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_playing);
 
-
         TextView songName = (TextView)findViewById(R.id.song_Name);
         TextView artistName = (TextView)findViewById(R.id.artist_Name);
         ImageView songPic = (ImageView) findViewById(R.id.song_Image);
 
         Bundle bundle = getIntent().getExtras();
-        MusicItems itemOne = (MusicItems) bundle.getSerializable("Music Items");
+        MusicItems itemClicked = (MusicItems) bundle.getSerializable("Music Items");
 
-        songName.setText(itemOne.getSongName());
-        artistName.setText(itemOne.getSongArtist());
-        songPic.setImageResource(itemOne.getSongPic());
+        songName.setText(itemClicked.getSongName());
+        artistName.setText(itemClicked.getSongArtist());
+        songPic.setImageResource(itemClicked.getSongPic());
 
     }
 }

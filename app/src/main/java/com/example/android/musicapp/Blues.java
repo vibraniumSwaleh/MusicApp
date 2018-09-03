@@ -34,9 +34,9 @@ public class Blues extends AppCompatActivity {
         musicItems.add(new MusicItems(R.drawable.blues, "minto wuksus","minto"));
 
 
-        final com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
+        com.example.android.musicapp.MusicAdapter itemsAdapter = new com.example.android.musicapp.MusicAdapter(this, musicItems);
 
-        final ListView listView = (ListView) findViewById(R.id.musicList);
+        ListView listView = (ListView) findViewById(R.id.musicList);
 
         listView.setAdapter(itemsAdapter);
 
@@ -45,10 +45,10 @@ public class Blues extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                MusicItems itemOne = musicItems.get(i);
+                MusicItems itemClicked = musicItems.get(i);
 
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("Music Items", itemOne);
+                bundle.putSerializable("Music Items", itemClicked);
 
                 Intent listViewClicked = new Intent(Blues.this, MusicPlaying.class);
                 listViewClicked.putExtras(bundle);
